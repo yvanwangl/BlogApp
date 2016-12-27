@@ -13,7 +13,7 @@ import {
 } from 'react-native';
 
 export default class AwesomeProject extends Component {
-  render() {
+    render() {
         return (
               <View style={styles.container}>
                     <Text style={styles.welcome}>
@@ -22,6 +22,10 @@ export default class AwesomeProject extends Component {
                     <Text style={styles.work}>
                         Hot reload is working!!
                     </Text>
+                    <Text>
+                        Test
+                    </Text>
+
                     <Text style={styles.welcome}>
                         Welcome to React Native!
                     </Text>
@@ -34,7 +38,7 @@ export default class AwesomeProject extends Component {
                     </Text>
               </View>
         );
-  }
+    }
 }
 
 const styles = StyleSheet.create({
