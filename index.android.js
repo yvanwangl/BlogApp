@@ -11,11 +11,19 @@ import {
     Text,
     View
 } from 'react-native';
+var ToolbarAndroid = require('ToolbarAndroid');
 
 export default class AwesomeProject extends Component {
     render() {
         return (
               <View style={styles.container}>
+                    <ToolbarAndroid
+                        /*logo={require('image!launcher_icon')}*/
+                        style={styles.toolbar}>
+                            <View style={{height: 56, flexDirection: 'row', alignItems: 'center'}}>
+                                <Text>{'\'Tis but a switch'}</Text>
+                            </View>
+                    </ToolbarAndroid>
                     <Text style={styles.welcome}>
                         Here is my first React Native App!!
                     </Text>
@@ -42,6 +50,10 @@ export default class AwesomeProject extends Component {
 }
 
 const styles = StyleSheet.create({
+    toolbar: {
+        backgroundColor: '#e9eaed',
+        height: 56,
+    },
     container: {
         flex: 1,
         justifyContent: 'center',
